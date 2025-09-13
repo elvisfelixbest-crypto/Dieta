@@ -1,0 +1,188 @@
+:root {
+    --primary-color: #2ecc71; /* Verde Vibrante */
+    --secondary-color: #3498db; /* Azul */
+    --dark-color: #2c3e50; /* Azul Escuro/Cinza */
+    --light-color: #ecf0f1; /* Cinza Claro */
+    --white-color: #ffffff;
+    --cta-color: #e67e22; /* Laranja */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--white-color);
+}
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.ebook-container {
+    position: relative;
+    display: inline-block; /* To contain the absolute positioned button */
+    margin-bottom: 20px;
+}
+
+.ebook-cover {
+    max-width: 280px;
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    display: block; /* Removes any extra space below the image */
+    margin: 25px auto 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Specific styles for the button inside the hero section */
+.cta-hero {
+    margin-bottom: 0;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(46, 204, 113, 0.5);
+}
+
+.cta-button .cta-text {
+    display: block;
+}
+
+.cta-button .price {
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.9;
+    display: block;
+    margin-top: 5px;
+}
+
+.secure-purchase {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* --- Benefits Section --- */
+.benefits {
+    padding: 50px 0;
+    background-color: var(--white-color);
+}
+
+.benefits h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.check-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+/* --- Final CTA --- */
+.final-cta {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.final-cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.final-cta p {
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.final-cta .cta-button {
+    background-color: var(--cta-color);
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+}
+
+.final-cta .cta-button:hover {
+    box-shadow: 0 8px 20px rgba(230, 126, 34, 0.5);
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8rem;
+}
+
+footer .disclaimer {
+    font-size: 0.7rem;
+    max-width: 600px;
+    margin: 10px auto 0;
+    opacity: 0.7;
+}
